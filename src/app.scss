@@ -1,0 +1,84 @@
+.app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    .wrapper__calculator {
+        width: 340px;
+        height: 450px;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #242931;
+        box-shadow: 3px 3px 5px 2px #c3c7cf;
+        input {
+            width: 100%;
+            padding: 0 10px;
+            text-align: end;
+            background-color: #242931;
+            border: none;
+            outline: none;
+            color: white;
+            font-weight: bold;
+            box-sizing: border-box;
+            height: 25px;
+            font-family: 'Arimo', sans-serif;
+        }
+        .userInput {
+            font-size: 16px;
+            color: lightgray;
+            letter-spacing: 0.15rem;
+        }
+        p {
+            padding: 0 10px;
+            font-size: 2.3rem;
+            height: 0;
+            padding-bottom: 20px;
+            color: white;
+            text-align: end;
+        }
+        .buttons {
+            width: 100%;
+            height: calc(100% - 120px);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            button {
+                font-size: 20px;
+                cursor: pointer;
+                border: 1px solid#242931;
+                color: white;
+                outline: none;
+                background-color: #32363c;
+                transition: 0.5s;
+                &:hover {
+                    background-color: rgb(82, 82, 86);
+                }
+            }
+            .btn-1,
+            .btn-2,
+            .btn-3,
+            .btn-7,
+            .btn-11 {
+                background-color: #3f4954;
+                color: orange;
+            }
+            .btn-0 {
+                background-color: #3f4954;
+                border-top-left-radius: 20px;
+            }
+            .btn-3 {
+                border-top-right-radius: 20px;
+            }
+            .btn-15 {
+                background-color: orange;
+                height: 200%;
+                border-bottom-right-radius: 10px;
+            }
+            .btn-16 {
+                border-bottom-left-radius: 10px;
+            }
+        }
+    }
+}
